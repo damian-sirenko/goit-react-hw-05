@@ -1,0 +1,14 @@
+.link {
+  width: 80px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border: 2px solid orangered;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.link:hover {
+  background-color: #ffe0e0;
+  border: 2px solid rgb(255, 120, 71);
+}

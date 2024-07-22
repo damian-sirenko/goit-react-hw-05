@@ -1,0 +1,35 @@
+.list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.listItem {
+  margin-top: 10px;
+  width: 160px;
+  border: 2px solid rgb(154, 140, 140);
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.listItem:hover {
+  border: 2px solid orangered;
+  transform: scale(1.1);
+}
+
+.itemImg {
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.castName {
+  font-weight: 600;
+}
+.castCharacter {
+  margin-bottom: 0;
+  font-size: 14px;
+}

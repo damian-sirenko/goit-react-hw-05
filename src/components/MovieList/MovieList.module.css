@@ -1,0 +1,6 @@
+.list {
+  margin-left: 20px;
+}
+.listItem:hover {
+  color: orangered;
+}
