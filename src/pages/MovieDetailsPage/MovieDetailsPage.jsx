@@ -1,5 +1,5 @@
 import { NavLink, Outlet, useParams, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { getMovieDetails } from "../../movies-api";
 import css from "./MovieDetailsPage.module.css";
 import { GoBackButton } from "../../components/GoBackButton/GoBackButton";
@@ -11,7 +11,7 @@ export default function MovieDetailsPage() {
   const [error, setError] = useState(null);
   const location = useLocation();
 
-  const goBackPath = location?.state?.from ?? "/";
+  const goBackPath = useRef(location?.state?.from ?? "/");
 
   useEffect(() => {
     async function fetchMovieDetails() {

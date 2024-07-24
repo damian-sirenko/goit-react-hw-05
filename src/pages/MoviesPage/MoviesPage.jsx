@@ -19,7 +19,7 @@ export default function MoviesPage() {
       try {
         const data = await searchMovies(query);
         setMovies(data);
-        setLoader(false);
+        setLoader(true);
       } catch (error) {
         setError(error.message);
         setLoader(false);
